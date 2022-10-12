@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+.vscode
 # dependencies
 /node_modules
 /.pnp
@@ -23,15 +23,22 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
 # local env files
+.env
 .env*.local
-
 # vercel
 .vercel
+vercel.*.json
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-.vscode
+
+
+# PWA
+workbox-*.js
+sw.js
+
+# IDE
+.idea/
+
+# MY_TODO
+MY_TODO.md
