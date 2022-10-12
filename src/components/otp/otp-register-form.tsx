@@ -1,11 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import MobileOtpInput from 'react-otp-input';
 import Button from '@/components/ui/button';
 import Input from '@/components/ui/forms/input';
-import Label from '@/components/ui/forms/label';
 import { useModalAction } from '@/components/ui/modal/modal.context';
 import { Form } from '@/components/ui/forms/form';
-import { Controller } from 'react-hook-form';
 import * as yup from 'yup';
 
 interface OtpRegisterFormProps {
@@ -58,29 +55,6 @@ export default function OtpRegisterForm({
               className="mb-5"
               error={t(errors.name?.message!)}
             />
-
-            <div className="mb-5">
-              <Label>{t('text-otp-code')}</Label>
-              <Controller
-                control={control}
-                render={({ field: { onChange, onBlur, value } }) => (
-                  <MobileOtpInput
-                    value={value}
-                    onChange={onChange}
-                    numInputs={6}
-                    separator={
-                      <span className="hidden sm:inline-block">-</span>
-                    }
-                    containerStyle="flex items-center justify-between -mx-2"
-                    inputStyle="flex items-center justify-center !w-full mx-2 sm:!w-9 !px-0 appearance-none transition duration-300 ease-in-out text-heading text-sm focus:outline-none focus:ring-0 border border-border-base rounded focus:border-accent h-12"
-                    disabledStyle="!bg-gray-100"
-                  />
-                )}
-                name="code"
-                defaultValue=""
-              />
-            </div>
-
             <div className="grid grid-cols-2 gap-5">
               <Button
                 variant="outline"
