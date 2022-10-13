@@ -88,26 +88,6 @@ function LoginForm() {
         </span>
       </div>
       <div className="mt-2 grid grid-cols-1 gap-4">
-        <Button
-          className="!bg-social-google !text-light hover:!bg-social-google-hover"
-          disabled={isLoading}
-          onClick={() => {
-            signIn('google');
-          }}
-        >
-          <GoogleIcon className="h-4 w-4 ltr:mr-3 rtl:ml-3" />
-          {t('text-login-google')}
-        </Button>
-
-        <Button
-          className="h-11 w-full !bg-gray-500 !text-light hover:!bg-gray-600 sm:h-12"
-          disabled={isLoading}
-          onClick={() => openModal('OTP_LOGIN')}
-        >
-          <MobileIcon className="h-5 text-light ltr:mr-2 rtl:ml-2" />
-          {t('text-login-mobile')}
-        </Button>
-
         {isCheckout && (
           <Button
             className="h-11 w-full !bg-pink-700 !text-light hover:!bg-pink-800 sm:h-12"
