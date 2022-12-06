@@ -1,8 +1,12 @@
-# Work in Progress 
+#  Ecomm-shopfront
 
-### Ecomm-shopfront
+### Work in Progress
 
 Market end customer facing app for E-marketplace.
+![alt text](./ecomm-Bags.png)
+![alt text](./ecomm-Clothing.png)
+![alt text](./ecomm-Grocery.png)
+![alt text](./ecomm-Makeup.png)
 
 
 TODO:
